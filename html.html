@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarbonCrunch</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="nav-container">
+            <div class="logo"><img src="C:\Users\Srikanth\Downloads\logo.png"" class="img"/>CarbonCrunch</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="login">Login</button>
+                <button class="book-demo">Book Demo</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Slider Section -->
+    <div class="slider-container">
+        <div class="slide active">
+            <section class="hero">
+                <div class="middle-div">
+                    <p class="environment">🌍 Let's Save our Environment</p>
+                    <h1>Streamline Your Sustainability Reporting With <span class="highlight">CARBON CRUNCH</span></h1>
+                    <p class="accuracy">95% Accurate Carbon Calculations Trusted by Industry Leaders</p>
+                    <div class="cta-buttons">
+                        <button class="free-calculator">Free Calculator</button>
+                        <button class="book-demo">Book Demo</button>
+                    </div>
+                    
+                </div>
+            </section>
+        </div>
+
+        <!--<div class="slide">
+            <section class="hero">
+                <div class="middle-div">
+                    <h1>Discover How We Help Reduce Your Carbon Footprint</h1>
+                    <p>Our solutions are trusted by top organizations worldwide.</p>
+                    <div class="cta-buttons">
+                        <button class="free-calculator">Learn More</button>
+                        <button class="book-demo">Get Started</button>
+                    </div>
+                </div>
+            </section>
+        </div>-->
+
+        <div class="slide">
+            <section class="hero">
+                <div class="middle-div">
+                    <div class="image-box">
+                        <!--<img src="your-image.jpg" alt="Background Image">-->
+                    </div>
+                    <div class="stat-box black">
+                        <h2>98%</h2>
+                        <p>Of CEOs Agree Sustainability Is Their Responsibility</p>
+                    </div>
+                    <div class="stat-box green">
+                        <h2>3X</h2>
+                        <p>ESG High Performers Deliver A Higher Total Shareholder Return</p>
+                    </div>
+                    <div class="stat-box white">
+                        <h2>37%</h2>
+                        <p>Of The World's Largest Companies Have A Public Net Zero Target. Nearly All Are Off Track</p>
+                    </div>
+                    <div class="stat-box dark">
+                        <h2>18%</h2>
+                        <p>Of Companies Are Cutting Emissions Fast Enough To Reach Net Zero By 2050</p>
+                    </div>
+            
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelectorAll(".slide");
+            let currentIndex = 0;
+
+            function nextSlide() {
+                slides[currentIndex].classList.remove("active");
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add("active");
+            }
+
+            setInterval(nextSlide, 5000); // Auto-slide every 5 seconds
+        });
+    </script>
+
+</body>
+</html>
